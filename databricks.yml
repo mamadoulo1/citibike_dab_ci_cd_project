@@ -44,8 +44,10 @@ targets:
       root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
       
     permissions:
-      - user_name: lomamadou95@gmail.com
+      - service_principal_name: 2b892289-7284-47af-a274-b1781a48e1ca
         level: CAN_MANAGE
+    run_as:
+      service_principal_name: 2b892289-7284-47af-a274-b1781a48e1ca    
 
 
   prod:
@@ -61,6 +63,8 @@ targets:
       root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
 
     permissions:
-      - user_name: lomamadou95@gmail.com
+      - service_principal_name: 5b2213fd-1c0f-4794-b94e-55846d448f0a
         level: CAN_MANAGE
+    run_as:
+      service_principal_name:  5b2213fd-1c0f-4794-b94e-55846d448f0a 
 
